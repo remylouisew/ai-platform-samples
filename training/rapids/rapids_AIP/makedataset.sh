@@ -6,7 +6,7 @@
 
 # Set chunks to 10 for 10 1 GB files (which will be uploaded 10 times for a total of 100GB). If you want more data to play around with, just increase NUM_CHUNKS)
 NUM_CHUNKS=${1:-10}
-GCS_BUCKET="rwtmp_demo_ml/nvidiadask/atest" #Choose a name for your bucket, or if you already have a bucket/folder in mind, put that here
+GCS_BUCKET=[BUCKET_NAME] #Choose a name for your bucket, or if you already have a bucket/folder in mind, put that here
 
 # Create a GCS bucket in which to store the data
 #gsutil mb -l us-central1 gs://$GCS_BUCKET
