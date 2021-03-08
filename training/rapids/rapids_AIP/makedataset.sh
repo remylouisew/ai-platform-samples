@@ -22,7 +22,7 @@ num_lines=`cat HIGGS.csv| wc -l`
 
 len=1470000
 
-step_size=$(( (num_lines-len) / num_chunks))
+step_size=$(( (num_lines-len) / NUM_CHUNKS))
 
  
 ## Replicate the original dataset into 10 1GB chunks
